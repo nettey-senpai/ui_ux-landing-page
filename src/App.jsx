@@ -1,4 +1,4 @@
-import { Billing, Business, CTA, Clients, Footer, Navbar, Stats, Testimonials } from "./components";
+import { Billing, Business, CTA, Clients, Footer, Hero, Navbar, Stats, Testimonials } from "./components";
 import styles from "./style";
 
 const App = () => (
@@ -10,7 +10,7 @@ const App = () => (
     </div>
 
     <div className={`bg-primary ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>Hero</div>
+      <div className={`${styles.boxWidth}`}><Hero /></div>
     </div>
 
     <div className={`bg-primary ${styles.paddingx} ${styles.flexStart}`}>
