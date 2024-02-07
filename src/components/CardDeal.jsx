@@ -1,7 +1,7 @@
-const CardDeal = () => {
-  return (
-    <div>CardDeal</div>
-  )
-}
+const CardDeal = () => (
+  <section className="layout">
+
+  </section>
+)
 
 export default CardDeal

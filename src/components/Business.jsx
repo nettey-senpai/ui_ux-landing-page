@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div
-    className={`flex flex-row p-6 rounded-[20px] ${
+    className={`flex flex-row sm:px-16 p-6 rounded-[20px] ${
       index !== features.length - 1 ? "mb-6" : "mb-0"
     } feature-card`}
   >
@@ -27,7 +27,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 
 const Business = () => {
   return (
-    <section id="features" className={layout.section}>
+    <section id="features" className={`${layout.section} sm:px-16`}>
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2}>
           You do the business, <br className="sm:block hidden" /> we’ll handle
