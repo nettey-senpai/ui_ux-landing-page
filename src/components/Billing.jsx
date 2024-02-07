@@ -2,7 +2,11 @@ import { apple, bill, google } from "../assets";
 import styles, { layout } from "../style";
 
 const Billing = () => (
+
+  // section that displays right side on top and left side below on mobile screens
   <section id="products" className={`${layout.sectionReverse} sm:px-16`}>
+
+    {/* left side */}
     <div className={layout.sectionImgReverse}>
       <img
         src={bill}
@@ -11,9 +15,11 @@ const Billing = () => (
       />
     </div>
 
+    {/* gradient */}
     <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />
     <div className="absolute z-[0] -left-1/2 bottom-0 w-[50%] h-[50%] rounded-full pink__gradient" />
 
+    {/* right side */}
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
         Easily control your billing & invoicing.
@@ -23,6 +29,7 @@ const Billing = () => (
         neque. Fusce ipsum orci rhoncus aliporttitor integer platea placerat.
       </p>
 
+      {/* buttons */}
       <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
         <img
           src={apple}
