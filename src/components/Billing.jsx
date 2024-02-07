@@ -2,10 +2,11 @@ import { apple, bill, google } from "../assets";
 import styles, { layout } from "../style";
 
 const Billing = () => (
-
   // section that displays right side on top and left side below on mobile screens
-  <section id="products" className={`${layout.sectionReverse} sm:px-16`}>
-
+  <section
+    id="products"
+    className={`${layout.sectionReverse} ${styles.paddingX}`}
+  >
     {/* left side */}
     <div className={layout.sectionImgReverse}>
       <img
