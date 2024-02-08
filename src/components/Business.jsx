@@ -2,11 +2,9 @@ import { features } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
 
-const FeatureCard = ({ icon, title, content, index }) => (
+const FeatureCard = ({ icon, title, content }) => (
   <div
-    className={`flex flex-row ${styles.paddingX} p-6 rounded-[20px] ${
-      index !== features.length - 1 ? "mb-6" : "mb-0"
-    } feature-card`}
+    className={`flex flex-row ${styles.paddingX} p-6 rounded-[20px] mb-6 last:mb-0 feature-card`}
   >
     <div
       className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
@@ -42,8 +40,8 @@ const Business = () => {
       </div>
 
       <div className={`${layout.sectionImg} flex-col`}>
-        {features.map((feature, index) => (
-          <FeatureCard key={feature.id} {...feature} index={index} />
+        {features.map((feature) => (
+          <FeatureCard key={feature.id} {...feature} />
         ))}
       </div>
     </section>
